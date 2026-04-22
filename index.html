@@ -99,7 +99,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <div class="map-legend">
       <b>图例</b>
       <div class="legend-item"><div class="legend-dot" style="background:#1d4ed8"></div>已选场站</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div>未选场站</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7030A0"></div>未选场站</div>
       <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div>高/特高等级电柜</div>
       <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div>中高等级电柜</div>
       <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div>中等级电柜</div>
@@ -253,7 +253,7 @@ function initMap(){
   // 场站（尺寸放大，白色粗边框）
   DATA.all_stations.forEach(s=>{
     const isS=s['是否选择']==='已选';
-    const col=isS?'#1d4ed8':'#f97316';
+    const col=isS?'#1d4ed8':'#7030A0';
     const sz=isS?22:18;
     const icon=L.divIcon({
       html:`<div style="width:${sz+4}px;height:${sz+4}px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.35)">
